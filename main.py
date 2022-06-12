@@ -15,7 +15,7 @@ def index():
         
         elif request.form['submit_button'] == 'Run':
             os.system("notify-send 'SpiderClam' 'Fresh Clam has started an update'")
-            os.system("freshclam --show progress")
+            #os.system("sudo --askpass freshclam --show progress")
             return render_template('index.html')
         else:
             pass # unknown
