@@ -12,6 +12,8 @@ How does this project work?
 
  - Currently there is a python 3 flask server running, hosting a website which does form html/flask calls, that then run the command associated with them on the termianl so you dont have to... 
 
+![alt text](https://github.com/Openanonwriter/spider.clam/blob/master/spiderclam.concept.png)
+
  - My current goal for this project is to have this project servered in a docker container, and have that docker container running the website and send back commands over ssh to localhost using a key instead of a password, with out any ports exposed outside of system. Their for client can see website, and with sudo we can give only the commands needed for clamav/fresh clam or what have you built in. 
 
 Why the project is useful.
@@ -34,4 +36,3 @@ Todo
 - User profile must have only access to only commands needed. Cat, Clamscan, Freshclams.
 - Set up sudo to only give access to the three commands above. 
 4.) create script to create user profile build. 
--
