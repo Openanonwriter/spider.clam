@@ -8,6 +8,8 @@ What does the project do?
 
  - At the moment you can run a full scan on your system, no other buttons work. 
 
+![alt text](https://github.com/Openanonwriter/spider.clam/blob/master/concpet%231.png)
+
 How does this project work?
 
  - Currently there is a python 3 flask server running, hosting a website which does form html/flask calls, that then run the command associated with them on the termianl so you dont have to... 
@@ -36,3 +38,4 @@ Todo
 - User profile must have only access to only commands needed. Cat, Clamscan, Freshclams.
 - Set up sudo to only give access to the three commands above. 
 4.) create script to create user profile build. 
+5.) Create spider clam logo
