@@ -9,7 +9,7 @@ def index():
     if request.method == 'POST':
         if request.form['submit_button'] == 'Run Full Scan':
             os.system("notify-send 'SpiderClam' 'Starting Full ClamAV Scan'")
-            #os.system("clamscan -r --quiet --bell --remove=yes /")
+            os.system("clamscan -r --quiet --bell --remove=yes /")
             print('Running Full Scan')
             return render_template('index.html')
         
