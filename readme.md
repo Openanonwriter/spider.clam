@@ -38,7 +38,8 @@ Create a user
 
 ![alt text](https://github.com/Openanonwriter/spider.clam/blob/master/spiderclam.concept.png)
 
- - My current goal for this project is to have this project servered in a docker container, and have that docker container running the website and send back commands over ssh to localhost using a key instead of a password, with out any ports exposed outside of system. Their for client can see website, and with sudo we can give only the commands needed for clamav/fresh clam or what have you built in. 
+ - My current goal for this project is to have this project servered in 
+ a docker container, and have that docker container running the website and send back commands over ssh to localhost using a key instead of a password, with out any ports exposed outside of system. Their for client can see website, and with sudo we can give only the commands needed for clamav/fresh clam or what have you built in. 
 
 Why the project is useful.
 - Most modren antivirus's may it be form a large box company to a scammy AV's have a pretty nice UI. Larger AV's for enterprise have a web interface. I belive clam av could have a Web UI to access which would be great for headless servers with out the need to access the command line.  
@@ -51,10 +52,13 @@ Who maintains and contributes to the project
 
 
 Todo
-1.) Get layout concept completed
-- Get multiple buttons working
-2.) Build a docker container
-- Container must have no exposed ports execpt ssh and web port for web server.
-- Docker container must be under 20MB/s
-3.) create script to create user profile build. 
-4.) Create spider clam logo
+1) Get layout concept completed
+    - Get multiple buttons working
+
+1) Build a docker container
+    - Container must have no exposed ports execpt ssh and web port for web server.
+    - Docker container must be under 20MB/s
+
+1) create script to create user profile build. 
+
+1) Create spider clam logo
