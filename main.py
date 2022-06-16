@@ -14,8 +14,8 @@ def index():
             return render_template('index.html')
         
         elif request.form['submit_button'] == 'Run':
-            os.system("notify-send 'SpiderClam' 'Fresh Clam has started an update'")
-            #os.system("sudo --askpass freshclam --show progress")
+            #os.system("notify-send 'SpiderClam' 'Fresh Clam has started an update'")
+            os.system('su -c "sudo freshclam --show-progress" spiderweb')
             return render_template('index.html')
         else:
             pass # unknown
@@ -23,4 +23,5 @@ def index():
         return render_template('index.html')
 
         if "__name__" == "__main__":
-            app.run(debug=True)
+            app.run(debug=True, host='0.0.0.0', port=5000)
+
